@@ -1,0 +1,425 @@
+@font-face {
+    font-family: 'Horta';
+    src: url(Horta\ demo.otf) format('truetype'); /* Adicionando uma nova fonte*/
+  }
+
+
+*{
+    margin: 0%;
+}
+body{
+    width: 1349px; /*Largura da pagina*/
+    height: auto; /*Altura da pagina*/
+}
+#elemento-1{
+    background-image: url(imagens/img8.png); /*Adicionando uma imagem através do css*/
+    background-repeat: no-repeat; /*Usado para não deixar que a imagem fique se repetindo*/
+    width: 1349px;
+    height: 650px;
+    position: relative; /*Define uma posição relativa em relação aos elementos*/
+}
+
+#elemento-2{
+    position: absolute;
+    width: 400px;
+    height: 650px;
+    left: 0%;
+    top: auto;
+    background-color: black;
+    opacity: 0.7;
+}
+
+#texto-1{
+    color: #FF5C00;
+    margin-top: 40%;
+    font-size: 90px;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: Horta;
+}
+
+#resultados{
+    width: 1349px;
+    height: 600px;
+}
+
+#depoimentos{
+    width: 1349px;
+    height: 600px;
+    background-color: black;
+    position: relative;
+}
+
+#decoracao{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 492px solid transparent;
+    border-right: 492px solid transparent;
+    border-bottom: 492px solid #FF5C00;
+    transform: rotate(-135deg);
+    margin-left: -400px;
+    margin-top: 180px;
+    z-index: 1;
+}
+
+#foto-1{
+    position: inherit;
+    background-image: url(imagens/Aluno1.png);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-left: 70px;
+    z-index: 2;
+}
+
+#title1{
+    background-color: black;
+}
+
+#title1 h2{
+    color: #FF5C00;
+    font-size: 60px;
+    font-family: Horta;
+    margin-left: 42%;
+    text-transform: uppercase;
+}
+
+#texto-depoimento1{
+    position: absolute;
+    color: aliceblue;
+    font-size: 25px;
+    width: 240px;
+    height: 225px;
+    margin-left: 55px;
+    z-index: 3;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: flex-start;
+}
+
+#foto-2{
+    margin-top: -238px;  
+    position: inherit;
+    background-image: url(imagens/ramon-dino.png);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-left: 400px;
+    z-index: 2;
+}
+
+#texto-depoimento2{
+    position: absolute;
+    color: aliceblue;
+    font-size: 23px;
+    width: 240px;
+    height: 290px;
+    margin-left: 380px;
+    z-index: 3;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: flex-start;
+}
+
+#foto-3{
+    margin-top: -238px;  
+    position: inherit;
+    background-image: url(imagens/matheus-kevin.png);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-left: 730px;
+    z-index: 2;
+}
+
+#texto-depoimento3{
+    position: absolute;
+    color: aliceblue;
+    font-size: 23px;
+    width: 240px;
+    height: 290px;
+    margin-left: 710px;
+    z-index: 3;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: flex-start;
+}
+
+#foto-4{
+    margin-top: -238px;  
+    position: inherit;
+    background-image: url(imagens/matheus-militao.png);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-left: 1060px;
+    z-index: 2;
+}
+
+#texto-depoimento4{
+    position: absolute;
+    color: aliceblue;
+    font-size: 23px;
+    width: 240px;
+    height: 290px;
+    margin-left: 1050px;
+    z-index: 3;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: flex-start;
+}
+
+#planos-de-treino{
+    width: 1349px;
+    height: 460px;
+    background-color: #000;
+}
+
+#title2{
+    background-color: black;
+}
+
+#title2 h2{
+    color: #FF5C00;
+    font-size: 60px;
+    font-family: Horta;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.cards-container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .card {
+    width: 300px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .plan-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: Verdana;
+    color: #FF5C00;
+  }
+  
+  .plan-price {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Verdana;
+    color: #FF5C00;
+  }
+  
+  .plan-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+.plan-features li {
+    margin-bottom: 8px;
+}
+  
+.select-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #FF5C00;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#equipamentos{
+    width: 1349px;
+    height: 1340px;
+    background-color: #000;
+} 
+
+#title3{
+    background-color: black;
+}
+
+#title3 h2{
+    color: #FF5C00;
+    font-size: 60px;
+    font-family: Horta;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.tipo-equipamento{
+    color: #FF5C00;
+    font-size: 60px;
+    font-family: Horta;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.maquinas-pernas{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 32px;
+}
+
+.maquinas-peito{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 32px;
+}
+
+.maquinas-aerobico{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 65px;
+}
+
+#calc-imc{
+    width:1349px;
+    height: 917px;
+    background-color: #000;
+}
+
+#title4{
+    background-color: black;
+}
+
+#title4 h2{
+    color: #FF5C00;
+    font-size: 60px;
+    font-family: Horta;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 450px;
+    margin-left: 32%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #FF5C00;
+}
+  
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+  
+label {
+    margin-right: 10px;
+    font-size: 30px;
+    color: #FF5C00
+}
+  
+input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  
+button {
+    background-color: #FF5C00;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+}
+  
+p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    color: #FF5C00
+}
+  
+#resultado {
+    font-weight: bold;
+    color: #FF5C00
+}
+
+#tbl-imc{
+    color:#FF5C00;
+    font-family: Horta;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+table {
+    margin: auto; /* Centraliza a tabela na página */
+    border-collapse: collapse; /* Remove espaçamento entre as células */
+    width: 80%; /* Define a largura da tabela */
+    margin-top: 20px; /* Adiciona um espaçamento superior */
+    color: white;
+}
+
+th, td {
+    padding: 10px; /* Adiciona espaçamento interno nas células */
+    border: 1px solid #ddd; /* Adiciona bordas às células */
+}
+
+th {
+    background-color: black; /* Cor de fundo do cabeçalho */
+    color:#f8f8ff;
+    font-family: Horta;
+    font-size: 50px;
+}
+
+td{
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+tr:nth-child() {
+    background-color: #f8f8ff; /* Cor de fundo para linhas pares */
+}
+
+#sobre-nos{
+    width: auto;
+    height: 700px;
+    background-color: #000;
+}
+
+#title5{
+    background-color: black;
+}
+
+#title5 h2{
+    color: #FF5C00;
+    font-size: 60px;
+    font-family: Horta;
+    text-align: center;
+    text-transform: uppercase;
+}
