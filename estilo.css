@@ -42,7 +42,7 @@ body{
 
 #resultados{
     width: 1349px;
-    height: 600px;
+    height: 714px;
 }
 
 #depoimentos{
@@ -484,10 +484,15 @@ tr:nth-child() {
 }
 
 #ValoresAcad{
-    background-color: #FF5C00;
+    background-color: #000;
     width: 450px;
     height: 600px;
     margin-left: 60%;
     margin-top: -20.19%;
+    border-radius: 5px;
+}
+
+#ValoresAcad img{
+    max-width: 100%;
     border-radius: 5px;
 }
