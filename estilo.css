@@ -408,7 +408,7 @@ tr:nth-child() {
 
 #sobre-nos{
     width: auto;
-    height: 800px;
+    height: 810px;
     background-color: #000;
 }
 
@@ -480,7 +480,7 @@ tr:nth-child() {
     font-family: Horta;
     font-size: 50px;
     text-transform: uppercase;
-    margin-left: 35%;
+    margin-left: 19%;
 }
 
 #ValoresAcad{
@@ -495,4 +495,27 @@ tr:nth-child() {
 #ValoresAcad img{
     max-width: 100%;
     border-radius: 5px;
+}
+
+#Historia{
+    width: 600px;
+    height: 250px;
+    margin-top: -250px;
+    margin-left: 3%;
+    border-radius: 5px;
+}
+
+#Historia img{
+    border-radius: 5px;
+    max-width: auto;
+}
+
+footer{
+    width: auto;
+    height: 40px;
+    background-color:#000;
+    color:#FF5C00 ;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
 }
