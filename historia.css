@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Horta';
+    src: url(Horta\ demo.otf) format('truetype'); /* Adicionando uma nova fonte*/
+  }
+
+
+*{
+    margin: 0%;
+}
+body{
+    width: auto; /*Largura da pagina*/
+    height: auto; /*Altura da pagina*/
+    background-image: url(imagens/backgroundHistory3.png);
+    background-repeat: no-repeat;
+}
