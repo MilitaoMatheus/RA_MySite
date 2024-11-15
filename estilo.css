@@ -170,7 +170,7 @@ body{
 
 #planos-de-treino{
     width: 1349px;
-    height: 460px;
+    height: 490px;
     background-color: #000;
 }
 
@@ -194,6 +194,7 @@ body{
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    gap: 20px; /* Adicionando espaço entre os cards */
   }
   
   .card {
@@ -203,6 +204,9 @@ body{
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   
   .plan-title {
@@ -210,7 +214,7 @@ body{
     font-weight: bold;
     text-align: center;
     margin-bottom: 10px;
-    font-family: Verdana;
+    font-family: Verdana, sans-serif;
     color: #FF5C00;
   }
   
@@ -219,7 +223,7 @@ body{
     font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
-    font-family: Verdana;
+    font-family: Verdana, sans-serif;
     color: #FF5C00;
   }
   
@@ -228,16 +232,16 @@ body{
     padding: 0;
     margin-bottom: 20px;
     font-family: Arial, Helvetica, sans-serif;
-}
+  }
   
-.plan-features li {
+  .plan-features li {
     margin-bottom: 8px;
-}
+  }
   
-.select-btn {
+  .select-btn {
     display: block;
     width: 100%;
-    padding: 10px;
+    padding: 12px 20px;
     background-color: #FF5C00;
     color: #ffffff;
     text-align: center;
@@ -245,8 +249,20 @@ body{
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.2s ease;
-}
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: auto; /* Faz o botão ficar na parte inferior do card */
+  }
+  
+  .select-btn:hover {
+    background-color: #FF4500;
+    transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+  }
+  
+  .select-btn a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+ 
 
 #equipamentos{
     width: 1349px;

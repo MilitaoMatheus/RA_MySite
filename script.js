@@ -8,7 +8,20 @@ function calcularIMC() {
     }
   
     const imc = peso / (altura * altura);
-    document.getElementById('resultado').innerText = imc.toFixed(2);
+    document.getElementById('resultado').innerText = imc.toFixed(1);
+    if(imc<18.5){
+      alert('Você está muito magro! Seu IMC é de ' +imc.toFixed(1));
+    } else if(imc > 18.5 && imc <= 25){
+      alert('Você está com o peso na média! Seu IMC é de ' +imc.toFixed(1));
+    } else if(imc > 24.9 && imc < 30){
+      alert('Você está com Obesidade Grau I! Seu IMC é de ' +imc.toFixed(1));
+    } else if(imc > 30 && imc < 35){
+      alert('Você está com Obesidade Grau II! Seu IMC é de ' +imc.toFixed(1));
+    } else if(imc > 35){
+      alert('Você está com Obesidade Grau III! Seu IMC é de ' +imc.toFixed(1));
+    } else{
+      return false;
+    }
   }
   
   /* Programação do Primeiro Slide */
